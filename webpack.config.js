@@ -38,6 +38,7 @@ module.exports = {
   module: {
     rules: [
       rules.js,
+      rules.css
     ],
   },
 

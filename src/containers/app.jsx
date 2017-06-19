@@ -1,12 +1,13 @@
 import React, { PureComponent } from 'react';
+import style from './style.css';
 
 class App extends PureComponent {
 
   render() {
     return (
-      <div>
+      <h1 styleName={style.header}>
         hola mundo
-      </div>
+      </h1>
     );
   }
 }
