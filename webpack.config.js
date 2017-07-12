@@ -53,9 +53,11 @@ module.exports = {
   },
 
   externals: {
-    'react/lib/ReactContext': true,
-    'react/lib/ExecutionEnvironment': true,
-    'react/addons': true,
+      'react/addons': true,
+      'react/lib/ExecutionEnvironment': true,
+      'react/lib/ReactContext': true,
+      'react-dom/test-utils': true,
+      'react-test-renderer/shallow': true
   },
 
   performance: !devmode ? {

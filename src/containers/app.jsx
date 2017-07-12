@@ -1,13 +1,33 @@
 import React, { PureComponent } from 'react';
-import style from './style.css';
+import FilterList from '../components/filterlist/index.jsx';
 
 class App extends PureComponent {
+  onSearchChange = (event) => {
+    this.setState({
+      searchString: event.target.value
+    });
+  }
 
   render() {
     return (
-      <h1 styleName={style.header}>
-        hola mundo
-      </h1>
+      <div>
+        <h1>
+          hola mundo
+        </h1>
+        <FilterList
+          list={[
+            'james',
+            'vito',
+            'dan',
+            'khizar',
+            'mark',
+            'anna',
+            'danny',
+            'marky',
+            'chris'
+          ]}
+        />
+      </div>
     );
   }
 }
